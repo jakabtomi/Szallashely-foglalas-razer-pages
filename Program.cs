@@ -1,4 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using Szallashely_foglalas_razer_pages.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<PanzioContext>(options =>
+    options.UseSqlite("Data Source=panzio.db"));
+
 
 // Add services to the container.
 builder.Services.AddRazorPages();
