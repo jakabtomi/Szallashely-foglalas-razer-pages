@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Szallashely-foglalas-razer-pages/1.0.0": {
+        "runtime": {
+          "Szallashely-foglalas-razer-pages.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Szallashely-foglalas-razer-pages/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
