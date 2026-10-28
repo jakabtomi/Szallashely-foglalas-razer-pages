@@ -1,0 +1,43 @@
+﻿@page
+@model Szallashely_foglalas_razer_pages.Pages.Szobak.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Szoba</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Szoba.Szam)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Szoba.Szam)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Szoba.Ferohely)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Szoba.Ferohely)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Szoba.EjszakaiAr)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Szoba.EjszakaiAr)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Szoba.Leiras)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Szoba.Leiras)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Szoba.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

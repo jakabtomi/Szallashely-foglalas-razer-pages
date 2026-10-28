@@ -44,6 +44,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/User/Desktop/Szallashely-foglalas-razer-pages/Pages/Szobak/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3pvYmFrXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Szallashely-foglalas-razer-pages/Pages/Szobak/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3pvYmFrXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Szallashely-foglalas-razer-pages/Pages/Szobak/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3pvYmFrXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Szallashely-foglalas-razer-pages/Pages/Szobak/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3pvYmFrXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Szallashely-foglalas-razer-pages/Pages/Szobak/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3pvYmFrXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/User/Desktop/Szallashely-foglalas-razer-pages/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
