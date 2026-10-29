@@ -1,0 +1,66 @@
+﻿@page
+@model Szallashely_foglalas_razer_pages.Pages.Foglalasok.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Foglalas[0].Szoba)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Foglalas[0].VendegNev)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Foglalas[0].Erkezes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Foglalas[0].Tavozas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Foglalas[0].Letszam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Foglalas[0].Allapot)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Foglalas) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Szoba.Szam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VendegNev)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Erkezes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tavozas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Letszam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Allapot)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

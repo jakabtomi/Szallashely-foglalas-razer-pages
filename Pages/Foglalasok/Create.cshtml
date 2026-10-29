@@ -1,0 +1,59 @@
+﻿@page
+@model Szallashely_foglalas_razer_pages.Pages.Foglalasok.CreateModel
+
+        @{
+        ViewData["Title"] = "Create";
+        }
+        
+        <h1>Create</h1>
+        
+    <h4>Foglalas</h4>
+    <hr />
+    <div class="row">
+    <div class="col-md-4">
+    <form method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Foglalas.SzobaId" class="control-label"></label>
+                <select asp-for="Foglalas.SzobaId" class ="form-control" asp-items="ViewBag.SzobaId" ></select>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Foglalas.VendegNev" class="control-label"></label>
+                <input asp-for="Foglalas.VendegNev" class="form-control" aria-required="true"/>
+                <span asp-validation-for="Foglalas.VendegNev" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Foglalas.Erkezes" class="control-label"></label>
+                <input asp-for="Foglalas.Erkezes" class="form-control" />
+                <span asp-validation-for="Foglalas.Erkezes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Foglalas.Tavozas" class="control-label"></label>
+                <input asp-for="Foglalas.Tavozas" class="form-control" />
+                <span asp-validation-for="Foglalas.Tavozas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Foglalas.Letszam" class="control-label"></label>
+                <input asp-for="Foglalas.Letszam" class="form-control" />
+                <span asp-validation-for="Foglalas.Letszam" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Foglalas.Allapot" class="control-label"></label>
+                <input asp-for="Foglalas.Allapot" class="form-control" />
+                <span asp-validation-for="Foglalas.Allapot" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

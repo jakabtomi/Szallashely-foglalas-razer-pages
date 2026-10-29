@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Szallashely-foglalas-razer-pages")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2fd7319eb1d49e35724f34ae73693ad9c9457f14")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbb6dc784866d87d568f54f401be1510a3b80d0c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Szallashely-foglalas-razer-pages")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Szallashely-foglalas-razer-pages")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

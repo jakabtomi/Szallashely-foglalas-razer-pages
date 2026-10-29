@@ -32,6 +32,26 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/User/Desktop/Szallashely-foglalas-razer-pages/Pages/Foglalasok/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9nbGFsYXNva1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Szallashely-foglalas-razer-pages/Pages/Foglalasok/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9nbGFsYXNva1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Szallashely-foglalas-razer-pages/Pages/Foglalasok/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9nbGFsYXNva1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Szallashely-foglalas-razer-pages/Pages/Foglalasok/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9nbGFsYXNva1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/Szallashely-foglalas-razer-pages/Pages/Foglalasok/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9nbGFsYXNva1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/User/Desktop/Szallashely-foglalas-razer-pages/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
