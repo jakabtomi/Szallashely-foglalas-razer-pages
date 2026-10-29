@@ -33,6 +33,30 @@ namespace Szallashely_foglalas_razer_pages.Pages.Foglalasok
         {
             if (!ModelState.IsValid)
             {
+                ViewData["SzobaId"] = new SelectList(_context.Szobak, "Id", "Szam");
+                return Page();
+            }
+
+            //  tav es erkezes
+            if (Foglalas.Tavozas <= Foglalas.Erkezes)
+            {
+                ModelState.AddModelError("Foglalas.Tavozas", "A távozás dátumának későbbinek kell lennie, mint az érkezés!");
+            }
+
+            // ferohely ell
+            var szoba = await _context.Szobak.FindAsync(Foglalas.SzobaId);
+            if (szoba != null)
+            {
+                
+                if (Foglalas.Letszam > szoba.Ferohely)
+                {
+                    ModelState.AddModelError("Foglalas.Letszam", $"A megadott létszám ({Foglalas.Letszam} fő) meghaladja a szoba férőhelyét ({szoba.Ferohely} fő)!");
+                }
+            }
+
+            if (!ModelState.IsValid)
+            {
+                ViewData["SzobaId"] = new SelectList(_context.Szobak, "Id", "Szam");
                 return Page();
             }
 
@@ -41,5 +65,6 @@ namespace Szallashely_foglalas_razer_pages.Pages.Foglalasok
 
             return RedirectToPage("./Index");
         }
+
     }
 }
