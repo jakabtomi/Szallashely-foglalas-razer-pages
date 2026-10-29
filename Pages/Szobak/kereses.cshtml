@@ -1,0 +1,39 @@
+﻿@page
+@model Szallashely_foglalas_razer_pages.Pages.Szobak.keresesModel
+
+<h2>Szabad szobák keresése</h2>
+
+<form method="get">
+    <label>Érkezés:</label>
+    <input type="date" asp-for="Erkezes" required />
+
+    <label>Távozás:</label>
+    <input type="date" asp-for="Tavozas" required />
+
+    <button type="submit">Keresés</button>
+</form>
+
+<div asp-validation-summary="All" style="color:red;"></div>
+
+@if (Model.SzabadSzobak.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Szobaszám</th>
+                <th>Férőhely</th>
+                <th>Ár</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var szoba in Model.SzabadSzobak)
+            {
+                <tr>
+                    <td>@szoba.Szam</td>
+                    <td>@szoba.Ferohely fő</td>
+                    <td>@szoba.EjszakaiAr Ft</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

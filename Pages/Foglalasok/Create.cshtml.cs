@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using Szallashely_foglalas_razer_pages.Data;
 using Szallashely_foglalas_razer_pages.Models;
 
@@ -53,6 +54,17 @@ namespace Szallashely_foglalas_razer_pages.Pages.Foglalasok
                     ModelState.AddModelError("Foglalas.Letszam", $"A megadott létszám ({Foglalas.Letszam} fő) meghaladja a szoba férőhelyét ({szoba.Ferohely} fő)!");
                 }
             }
+            //  idoszak-atfeedes
+            bool vanAtfedes = await _context.Foglalasok.AnyAsync(f =>
+                f.SzobaId == Foglalas.SzobaId &&
+                f.Erkezes < Foglalas.Tavozas &&
+                f.Tavozas > Foglalas.Erkezes);
+
+            if (vanAtfedes)
+            {
+                ModelState.AddModelError(string.Empty, "Ez a szoba a megadott időszakra már le van foglalva!");
+            }
+
 
             if (!ModelState.IsValid)
             {
